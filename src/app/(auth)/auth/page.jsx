@@ -15,10 +15,12 @@ export default async function SigninPage() {
         <div className="flex flex-col gap-y-2">
           <div className="text-[26px]">
             <span>برام مهمه</span>
-            <h1 className="font-bold">پس بگو بم</h1>
+            <h1 className="font-bold">فضایی امن برای حرف‌های ناگفته</h1>
           </div>
           <span className="text-[#D2D2D2] ">
-            اینجا میتونی نظرتو درمورد هرشخصی بنویسی.
+            اینجا هرکس یک پروفایل اختصاصی داره. تو می‌تونی نظرها، بازخوردها و
+            نکات مثبتت رو برای بقیه بنویسی و متوجه بشی بقیه در مورد تو چی فکر
+            می‌کنند. نظر تو واقعاً مهمه!
           </span>
         </div>
         <LoginButton />
