@@ -3,19 +3,19 @@ import localFont from "next/font/local";
 export const modam = localFont({
   src: [
     {
-      path: "../../public/Modam-Bold.ttf",
+      path: "../../public/fonts/Modam-Bold.ttf",
       weight: "600",
     },
     {
-      path: "../../public/Modam-medium.ttf",
+      path: "../../public/fonts/Modam-Medium.ttf",
       weight: "500",
     },
     {
-      path: "../../public/Modam-regular.ttf",
+      path: "../../public/fonts/Modam-Regular.ttf",
       weight: "400",
     },
     {
-      path: "../../public/Modam-light.ttf",
+      path: "../../public/fonts/Modam-Light.ttf",
       weight: "300",
     },
   ],
