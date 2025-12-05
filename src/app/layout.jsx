@@ -1,19 +1,21 @@
-import { Toaster } from "sonner";
-import "./globals.css";
+import "@/style/globals.css";
 import { modam } from "@/constants/font";
-import ReactQueryProvider from "@/shared/componetns/providers/ReactQueryProvider";
+import Providers from "@/shared/componetns/providers";
+import FixedBottomBar from "@/shared/componetns/ui/fixed-bottom-bar";
+import AppNavigation from "@/shared/componetns/layout/app-navigation";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body dir="rtl" className={`${modam.variable} antialiased`}>
-        <main className="py-5 px-4 lg:px-0 max-w-2xl mx-auto">
-          <ReactQueryProvider>{children}</ReactQueryProvider>
-          <Toaster
-            position="top-center"
-            style={{ font: "inherit", direction: "rtl" }}
-          />
+        <main className="md:max-w-2xl mx-auto">
+          <Providers>{children}</Providers>
         </main>
+        <footer>
+          <FixedBottomBar>
+            <AppNavigation />
+          </FixedBottomBar>
+        </footer>
       </body>
     </html>
   );

@@ -8,12 +8,12 @@ export default async function Proxy(req) {
   });
 
   if (!session) {
-    return NextResponse.redirect(new URL("/sign-in", req.nextUrl));
+    return NextResponse.redirect(new URL("/auth", req.nextUrl));
   } else {
     return NextResponse.next();
   }
 }
 
 export const config = {
-  matcher: ["/", "/users/:path*", "/dashboard"],
+  matcher: ["/", "/users/:path*", "/account"],
 };
