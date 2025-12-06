@@ -9,8 +9,8 @@ export default async function SigninPage() {
   }
 
   return (
-    <div className="flex flex-col gap-y-8 h-screen">
-      <div className="w-full h-8/12 rounded-[0px_0px_29px_29px]  bg-[url(/assets/picture/login-picture.svg)] bg-center bg-no-repeat bg-cover"></div>
+    <div className="flex flex-col gap-y-4 h-dvh pb-4">
+      <div className="w-full h-7/12 rounded-[0px_0px_29px_29px]  bg-[url(/assets/picture/login-picture.svg)] bg-center bg-no-repeat bg-cover"></div>
       <div className="w-full h-4/12 px-2.5 flex flex-col gap-y-12">
         <div className="flex flex-col gap-y-2">
           <div className="text-[26px]">
