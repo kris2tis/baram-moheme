@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 
 const navigation = [
   { href: "/", icon: HomeIcon, title: "خانه" },
-  { href: "/account", icon: ProfileIcon, title: "پروفایل" },
+  { href: "/profile", icon: ProfileIcon, title: "پروفایل" },
 ];
 
 export default function AppNavigation() {
