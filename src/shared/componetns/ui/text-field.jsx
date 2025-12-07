@@ -20,7 +20,7 @@ export default function TextField({
           {...register(name)}
           name="name"
           type={type}
-          className="border border-white "
+          className="border border-secondary-100 "
         />
       </div>
       {hasError && (

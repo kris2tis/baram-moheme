@@ -44,7 +44,7 @@ const ReceivedCommentsCard = ({
   }, [state]);
 
   return (
-    <div className="flex items-start flex-col gap-y-[5px] border-b border-secondary-500 py-2.5">
+    <div className="flex items-start flex-col gap-y-[5px] border-b border-secondary-600 py-2.5">
       <span className="text-[12px]">{content}</span>
       <form action={likeAction}>
         <LikeCommentButton isLiked={isLiked} />

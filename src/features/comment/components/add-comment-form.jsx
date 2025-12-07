@@ -47,7 +47,7 @@ export const AddCommentForm = ({ reciverId, authorId }) => {
           onChange={(e) => setContent(e.target.value)}
           autoComplete="off"
           name="content"
-          className="w-full border bg-[#151515cc] backdrop-blur-md border-white h-full px-2.5 pr-5"
+          className="w-full border bg-secondary-700/80 backdrop-blur-md border-secondary-100/10 h-full px-2.5 pr-5"
           placeholder="افزودن نظر"
         />
       </div>

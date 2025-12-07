@@ -14,7 +14,7 @@ export default function Page() {
 const ProfileNavCard = () => {
   return (
     <Link href={"/account"}>
-    <div className="flex justify-between items-center bg-secondary-800 rounded-md px-3.5 py-2.5">
+    <div className="flex justify-between items-center bg-secondary-900 rounded-md px-3.5 py-2.5">
       <div className="flex gap-x-2.5">
         <div className="relative h-4 aspect-square">
           <Image src={"/assets/icons/profile.svg"} fill alt="account icon" />

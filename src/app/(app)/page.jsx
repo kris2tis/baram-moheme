@@ -5,7 +5,7 @@ import UserLoading from "@/features/users/components/user-list-loading";
 export default async function Home() {
   return (
     <div>
-      <div className=" border-b border-b-secondary-500 pb-2.5">
+      <div className=" border-b border-b-secondary-600 pb-2.5">
         <h1>صفحه اصلی</h1>
       </div>
       <Suspense fallback={<UserLoading />}>
