@@ -7,7 +7,7 @@ export const FollowButton = ({ isFollowed }) => {
   const buttonVariant = isFollowed ? "primary" : "secondary";
   return (
     <Button
-      className="flex items-center justify-center h-[45px] transition-colors duration-500"
+      className="flex items-center justify-center h-[45px] transition-colors duration-500 text-secondary-900!"
       variant={buttonVariant}
       type="submit"
       disabled={pending}
