@@ -7,7 +7,7 @@ import {
 } from "@/shared/assets/icons/icons";
 import Button from "@/shared/componetns/ui/button";
 import { useTheme } from "next-themes";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const themeOptions = [
   { name: "روشن", icon: LightIcon, value: "light" },
@@ -16,8 +16,13 @@ const themeOptions = [
 ];
 
 export default function Page() {
-  const [themeValue, setThemeValue] = useState("dark");
-  const { setTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
+  const [themeValue, setThemeValue] = useState();
+
+  useEffect(() => {
+    setThemeValue(theme);
+  }, [theme]);
+
   return (
     <div className="flex flex-col gap-y-4">
       <ThemeOptionList
@@ -28,9 +33,9 @@ export default function Page() {
       />
       <Button
         onClick={() => setTheme(themeValue)}
-        className="rounded-md! bg-transparent! text-secondary-100 border-secondary-600!"
+        className="rounded-md! bg-transparent!  border-secondary-600!"
       >
-        <span className="ml-1">اعمال تغییرات</span>
+        <span className="ml-1 text-secondary-100!">اعمال تغییرات</span>
         <HammerIcon iconColor="fill-secondary-100" />
       </Button>
     </div>
